@@ -31,9 +31,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(
               height: 30,
             ),
-            const Tooltip(
-              message: 'Tooltip',
-            ),
+           
             Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
