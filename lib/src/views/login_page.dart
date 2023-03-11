@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:haut_project_02/src/core/constants/app_images.dart';
+import 'package:haut_project_02/src/shared_widgets/custom_elevated_button.dart';
+import 'package:haut_project_02/src/views/signup_page.dart';
 
 import '../shared_widgets/app_elevated_button.dart';
 import '../shared_widgets/custom_textfield.dart';
@@ -31,7 +34,6 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(
               height: 30,
             ),
-           
             Center(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -84,10 +86,43 @@ class _LoginPageState extends State<LoginPage> {
             ),
             AppElevatedButton(
               buttonLabel: 'Sign Up',
-              onPressed: () {
-                
-              },
-            )
+              onPressed: () {},
+            ),
+            const SizedBox(
+              height: 24,
+            ),
+            CustomElevatedButton(
+              buttonLabel: 'Sign in With Google',
+              onPressed: () {},
+              imageString: AppSvgs.googleIcon,
+            ),
+            const SizedBox(
+              height: 100,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              const Text(
+                'New User?  ',
+                style: TextStyle(
+                  color: Color(0xFF6A6A6A),
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SignupPage(),
+                      ));
+                },
+                child: const Text(
+                  'Create Account',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ])
           ]),
         ),
       ),

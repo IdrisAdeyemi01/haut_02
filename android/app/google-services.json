@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583771692466",
+    "project_id": "haut-project-01",
+    "storage_bucket": "haut-project-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583771692466:android:54e17c7630d22f191898ab",
+        "android_client_info": {
+          "package_name": "com.example.haut_project_02"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583771692466-07eef9aob9n1f48punf9pvam91jm174l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLIjNpr6qAmZCO-_IU-UqL5yP8WMsrYjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583771692466-07eef9aob9n1f48punf9pvam91jm174l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
